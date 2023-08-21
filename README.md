@@ -17,7 +17,8 @@ This assignment was done to build a personal professional profile. Profile conta
 
 ## Usage
 
-Home Screen layout is available in the repository path: https://github.com/anthogr45/Challenge02/blob/main/assets/images/Assignment%202%20Screen.png
+Home Screen layout is available in the repository path: 
+https://github.com/anthogr45/Challenge02/blob/main/assets/images/Assignment%202%20Screen.png
 
 ## Credits
 

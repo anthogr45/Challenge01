@@ -2,7 +2,7 @@
     box-sizing: border-box;
   }
   
-  body {
+ body {
   font-family: Georgia, 'Times New Roman', Times, serif;
   margin: 0;
 }
@@ -10,7 +10,7 @@
 header {
   border: 10px;
   margin: 0.5px;
-  padding: 0px5px;
+  /* padding: 0px5px; */
   width: 100%;
   background: #02080e;
   color: #fff;
@@ -19,17 +19,17 @@ header {
 
 .avatar {
   vertical-align: middle;
-  width: 50px;
-  height: 70px;
+  width: 70px;
+  height: 80px;
   border-radius: 50%;
   padding: 0px;
   border: 100px;
 }
 
 .h1 {
-font-size: 30px;
+font-size: 40px;
 font-style: italic;
-color: #8e9496;
+color: #baced4;
 font-family: Georgia, 'Times New Roman', Times, serif
 
 }
@@ -59,7 +59,6 @@ main {
 }
 
 header img {
-
  border: 0px;
  margin: 0px;
  padding: 0px;
@@ -67,13 +66,11 @@ header img {
  height: 250px;
 } 
 
-
 .container {
   width: 25%;
   margin: auto; 
   background-color: #3a4a4e;
   height: 100%;
-  padding: 0px;
   display: flex;
   flex-direction:row;
   flex-wrap: wrap; 
@@ -85,12 +82,11 @@ header img {
   font-display: initial;
   font-family: Georgia, 'Times New Roman', Times, serif;
   color: #f4f5ef;
-  padding: 0px;
   display: flex;
   flex-wrap: wrap; 
 }
 
-.left { /* SUmmery Container Alignment*/
+.left { /* Summery Container Alignment*/
   background-color: white;
   width: 80%;
   float: left;
@@ -99,8 +95,8 @@ header img {
 h2 {
 
   font-size: 25px;
-  text-decoration: underline;
   color: #29e98f;
+  text-align: center;
   padding: 5px;
 }
 
@@ -118,6 +114,10 @@ p {
 
 ul {
   list-style: disc;
+}
+
+.b {
+color: #e92989;
 }
 
 /*Project Images */
@@ -148,6 +148,16 @@ ul {
   flex-wrap: wrap; 
 }
   
+.project-container { /* Main container for the project details*/
+  width: 100%;
+  margin-bottom: 30px;
+  padding: 20px;
+  height: 200px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: #42515a;
+  color: #ffffff;
+ 
+}
 
 .section-content { /*Project Details Container */
   width: 72%;
@@ -159,16 +169,6 @@ ul {
   flex-wrap: wrap;
 }
 
-.project-container { /* Main container for the project details*/
-  width: 100%;
-  margin-bottom: 30px;
-  padding: 20px;
-  height: 200px;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  background-color: #42515a;
-  color: #ffffff;
- 
-}
 .project-container p {
 
   color: #f0f3f2;
@@ -194,6 +194,11 @@ a:visited {
  }
 }
 
+b:hover {
+
+  color: #29bce9;
+}
+
 a:hover {
   color: #f5efef;
 }
@@ -202,10 +207,44 @@ p:hover{
   color: #bb4030;
 }
 
+address:hover {
+  color: #e98629;
+}
 
+@media screen and (max-width: 1332px) { /* Keep the display intact as the screen shrinks*/
 
+  .h2{
+
+    text-align: center;
+  }
+
+  .container {
+    width: 100%;
+    margin: auto; 
+    background-color: #2d226b; 
+    height: 100%;
+    padding: 0px;
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap; 
+  }
+
+  .section-content { 
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    display:flex;
+    flex-wrap: wrap;
+   
+  }
+
+}
 @media screen and (max-width: 950px)  { /*For Ipads and Tablets*/
-   nav {
+   
+  nav {
     flex-direction: column;
     order:1;
   }
@@ -215,17 +254,27 @@ p:hover{
   }
 
  .section-content {
-
     order: 2;
   }
 
   header {
-    background: #423737;
+    background: #574f4f;
   }
  
   nav,
   footer {
     background-color: #690d11;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  .img-first-assignment, .img-fiserv, .img-olb{
+
+    max-width:50px;
+    max-height: 50px;
+    padding: 0px;
   }
 
   .container {
@@ -239,9 +288,9 @@ p:hover{
     flex-wrap: wrap; 
   }
   
-
-  .section-content { /*Made the display 100% */
+.section-content { 
     width: 100%;
+    height: 100%;
     display: inline-block;
     margin-left: 20px;
     margin-right: 20px;
@@ -251,11 +300,11 @@ p:hover{
    
   }
     
-  .project-container { /*Made the display 100% */
-    width: 100%; 
+  .project-container { 
+    width: 100%;
+    height: 100%; 
     margin-bottom: 30px;
     padding: 20px;
-    height: 60px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #42515a;
     color: #ffffff;
@@ -263,11 +312,79 @@ p:hover{
     flex-wrap: wrap;
     
   }
-
-
 }
 
-@media screen and (max-width: 600px){ /*Iphone SE*/
+@media screen and (max-width: 768px) { 
+  nav {
+    flex-direction: column;
+    order:1;
+  }
+
+  .container {
+    order:1;
+  }
+
+ .section-content {
+    order: 2;
+  }
+
+  header {
+    background: #867474;
+  }
+ 
+  nav,
+  footer {
+    background-color: #4d187e;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  .img-first-assignment, .img-fiserv, .img-olb{
+
+    max-width:110px;
+    max-height: 50px;
+    padding: 10px;
+  }
+
+  .container {
+    width: 100%;
+    margin: auto; 
+    background-color: #2d226b; 
+    height: 100%;
+    padding: 0px;
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap; 
+  }
+  
+ .section-content { 
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    display:flex;
+    flex-wrap: wrap;
+   
+  }
+    
+  .project-container { 
+    height: 100%; 
+    margin-bottom: 30px;
+    padding: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #42515a;
+    color: #ffffff;
+    display:flex;
+    flex-wrap: wrap;
+    
+  }
+}
+
+@media screen and (max-width: 578x){ /*Iphone */
 
   ul {
     list-style: none;
@@ -317,8 +434,7 @@ p:hover{
     flex-wrap: wrap; 
   }
   
-
-  .section-content { /*Made the display 100% */
+  .section-content { 
     width: 100%;
     display: inline-block;
     margin-left: 20px;
@@ -329,7 +445,7 @@ p:hover{
    
   }
     
-  .project-container { /*Made the display 100% */
+  .project-container { 
     width: 100%; 
     margin-bottom: 30px;
     padding: 20px;
@@ -341,7 +457,6 @@ p:hover{
     flex-wrap: wrap;
     
   }
-
   
 }
 

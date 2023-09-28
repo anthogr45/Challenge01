@@ -390,13 +390,21 @@ address:hover {
     list-style: none;
   }
 
-  .img-first-assignment, .img-fiserv, .img-olb{
+  .img-first-assignment, .img-fiserv, .img-olb,  .purple{
 
   max-width: 100px;
   max-height: 40px;
   padding: 10px;
   }
 
+
+  .purple{
+
+  width: 350px;
+  padding: 50px;
+  object-fit: contain;
+  float: right;
+  }
   .project-container p {
 
        display: none;
@@ -425,7 +433,7 @@ address:hover {
 
   .container {
     width: 100%;
-    margin: auto; 
+    /* margin: auto;  */
     background-color: #2d226b; 
     height: 100%;
     padding: 0px;
@@ -436,6 +444,7 @@ address:hover {
   
   .section-content { 
     width: 100%;
+
     display: inline-block;
     margin-left: 20px;
     margin-right: 20px;
@@ -461,3 +470,10 @@ address:hover {
 }
 
 
+
+
+.purple_prj {
+
+  text-align: right;
+  float: right;
+}
